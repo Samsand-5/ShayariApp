@@ -24,7 +24,7 @@
             android:text="Teri aur meri raato mein,
 Bas itna farq hain ki,
 Teri raate so kar gujarti hain,
-Aur meri raate ro kar gujarti hain…"
+Aur meri raate ro kar gujarti hain"
             android:textColor="@color/black"
             android:gravity="center"
             android:textStyle="bold"
