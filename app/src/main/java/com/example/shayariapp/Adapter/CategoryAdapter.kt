@@ -29,22 +29,22 @@ class CategoryAdapter(val mainActivity: MainActivity, val list: ArrayList<Catego
 
         if(position%5==0){
             // holder.binding.itemText.setBackgroundColor(Color.parseColor(colorList[0]))
-            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_1)
+            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_1)
         }
         else if(position%5==1){
-            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_2)
+            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_2)
         }
         else if(position%5==2){
-            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_3)
+            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_3)
         }
         else if(position%5==3){
-            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_4)
+            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_4)
         }
         else if(position%5==4){
-            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_5)
+            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_5)
         }
         else{
-            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_4)
+            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_4)
         }
 
         holder.binding.itemText.text = list[position].name.toString()
