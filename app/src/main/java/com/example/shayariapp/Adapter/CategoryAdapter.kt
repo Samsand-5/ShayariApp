@@ -38,13 +38,13 @@ class CategoryAdapter(val mainActivity: MainActivity, val list: ArrayList<Catego
             holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_3)
         }
         else if(position%5==3){
-            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_4)
+            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_3)
         }
         else if(position%5==4){
             holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_5)
         }
         else{
-            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_4)
+            holder.binding.itemCategory.setBackgroundColor(R.drawable.gradient_3)
         }
 
         holder.binding.itemText.text = list[position].name.toString()
