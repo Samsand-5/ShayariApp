@@ -13,7 +13,7 @@ import com.example.shayariapp.databinding.ItemCategoryBinding
 
 class CategoryAdapter(val mainActivity: MainActivity, val list: ArrayList<CategoryModel>) :RecyclerView.Adapter<CategoryAdapter.CatViewHolder>() {
 
-    val colorList = arrayListOf<String>("#1abc9c","#f1c40f","#2ecc71","#c0392b","#9b59b6")
+    //val colorList = arrayListOf<String>("#1abc9c","#f1c40f","#2ecc71","#c0392b","#9b59b6")
 
     class CatViewHolder(val binding: ItemCategoryBinding) : RecyclerView.ViewHolder(binding.root)
 
