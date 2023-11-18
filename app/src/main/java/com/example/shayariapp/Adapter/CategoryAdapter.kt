@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.shayariapp.AllShayariActivity
 import com.example.shayariapp.MainActivity
 import com.example.shayariapp.Model.CategoryModel
+import com.example.shayariapp.R
 import com.example.shayariapp.databinding.ItemCategoryBinding
 
 class CategoryAdapter(val mainActivity: MainActivity, val list: ArrayList<CategoryModel>) :RecyclerView.Adapter<CategoryAdapter.CatViewHolder>() {
@@ -27,22 +28,23 @@ class CategoryAdapter(val mainActivity: MainActivity, val list: ArrayList<Catego
     override fun onBindViewHolder(holder: CatViewHolder, position: Int) {
 
         if(position%5==0){
-            holder.binding.itemText.setBackgroundColor(Color.parseColor(colorList[0]))
+            // holder.binding.itemText.setBackgroundColor(Color.parseColor(colorList[0]))
+            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_1)
         }
         else if(position%5==1){
-            holder.binding.itemText.setBackgroundColor(Color.parseColor(colorList[1]))
+            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_2)
         }
         else if(position%5==2){
-            holder.binding.itemText.setBackgroundColor(Color.parseColor(colorList[2]))
+            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_3)
         }
         else if(position%5==3){
-            holder.binding.itemText.setBackgroundColor(Color.parseColor(colorList[3]))
+            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_4)
         }
         else if(position%5==4){
-            holder.binding.itemText.setBackgroundColor(Color.parseColor(colorList[4]))
+            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_5)
         }
         else{
-            holder.binding.itemText.setBackgroundColor(Color.parseColor(colorList[1]))
+            holder.binding.itemText.setBackgroundColor(R.drawable.gradient_4)
         }
 
         holder.binding.itemText.text = list[position].name.toString()
