@@ -19,15 +19,15 @@ import com.example.shayariapp.databinding.ItemShayariBinding
 class AllShayariAdapter(
     val allShayariActivity: AllShayariActivity,
     val shayariList: ArrayList<ShayariModel>
-) : RecyclerView.Adapter<AllShayariAdapter.ShayariViewHolder>() {
+) : RecyclerView.Adapter<AllShayariAdapter.shayariViewHolder>() {
 
-    class ShayariViewHolder(val binding: ItemShayariBinding) : RecyclerView.ViewHolder(binding.root)
+    class shayariViewHolder(val binding: ItemShayariBinding) : RecyclerView.ViewHolder(binding.root)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ShayariViewHolder {
-       return ShayariViewHolder(ItemShayariBinding.inflate(LayoutInflater.from(parent.context),parent,false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): shayariViewHolder {
+       return shayariViewHolder(ItemShayariBinding.inflate(LayoutInflater.from(parent.context),parent,false))
     }
 
-    override fun onBindViewHolder(holder: ShayariViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: shayariViewHolder, position: Int) {
 
         if(position%5==0){
             holder.binding.mainBac.setBackgroundResource(R.drawable.gradient_1)
